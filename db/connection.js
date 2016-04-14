@@ -1,16 +1,16 @@
 var mongoose = require("mongoose");
 
-var ConceptSchema = new mongoose.Schema(
+var JargonSchema = new mongoose.Schema(
   {
     title: String,
-    description: Text,
-    resources; String,
-    entered-date: String,
-    read-date: String
+    description: String,
+    resources: String,
+    entered_date: String,
+    read_date: String
   }
 );
 
-mongoose.model("Jargon", ConcepSchema);
+mongoose.model("Jargon", JargonSchema);
 if(process.env.NODE_ENV == "production"){
  mongoose.connect(process.env.MONGODB_URL);
 }else{
