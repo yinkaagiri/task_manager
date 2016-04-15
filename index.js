@@ -23,6 +23,13 @@ app.get("/jargon", function(req, res){
   });
 });
 
+app.get("/jargons/:title", function(req, res){
+  Jargon.findOne({title: req.params.title}).then(function(jargon){
+    res.render("jargon-show", {
+      jargon: jargon
+    });
+  });
+});
 app.listen(3001, function(){
   console.log("It's aliiive!");
 });
