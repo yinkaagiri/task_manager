@@ -1,4 +1,5 @@
 var mongoose = require("mongoose");
+var seedData = require("./seeds.json");
 
 var JargonSchema = new mongoose.Schema(
   {
