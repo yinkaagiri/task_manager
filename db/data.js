@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "title": "Docker",
     "description": "Docker is an open-source project that automates the deployment of applications inside software containers, by providing an additional layer of abstraction and automation of operating-system-level virtualization on Linux.",

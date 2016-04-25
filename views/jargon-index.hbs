@@ -1,8 +1,7 @@
 <h1> All Jargons </h1>
-{{jargons.length}}
-{{jargons.name}}
-
-{{#each jargons as |jargon index|}}
-{{jargon.name}}
+<ol>
+{{#each jargons }}
+<li>{{this.title}}</li>
 
 {{/each}}
+</ol>
